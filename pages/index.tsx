@@ -5,8 +5,8 @@ import { Navbar } from "../components/navbar";
 import { Hero } from "../components/hero";
 import { Description } from "../components/description";
 import { Product } from "../components/product";
-import { Contactinfo } from "../components/contact info";
 import { Footer } from "../components/footer";
+import { Footer1 } from "../components/footer-1";
 
 const Home: NextPage = () => {
   return (
@@ -31,8 +31,8 @@ const Home: NextPage = () => {
         <Hero />
         <Description />
         <Product />
-        <Contactinfo />
         <Footer />
+        <Footer1 />
       </main>
     </div>
   );
