@@ -7,37 +7,49 @@ export const Footer = () => {
     <footer>
       <div className="flex">
         <div className="bg-gray-100 h-[40rem] w-full">
-          <div className="ml-[8rem] mt-48">
-            <Image
-              src="/photos/box test image.png"
-              alt=""
-              width={128}
-              height={128}
-            />
-            <div className="flex font-serif justify-center ml-20 ">
-              <div className="">
+          <div className="ml-[0rem] mt-52">
+            <div className="flex justify-evenly  ">
+              <Image
+                src="/photos/box test image.png"
+                alt=""
+                width={158}
+                height={128}
+              />
+              <div className="font-serif ml-18"></div>
+              <div className="leading-10">
                 <p className="text-4xl underline decoration-orange-600 underline-offset-8 decoration-4 ">
                   Contact
                 </p>
                 <ul className="mt-10 ">
-                  <li>Text</li>
-                  <li>Text</li>
-                  <li>Text</li>
+                  <li>87 City Walls Rd, Clophill, Mk45 1eu</li>
+                  <li>
+                    <b className="uppercase">Email: </b>email@studioblue.com
+                  </li>
+                  <li>
+                    <b className="uppercase">Fax: </b> +88(0) 202 0000 001
+                  </li>
                 </ul>
               </div>
-              <div className="">
+              <div className="leading-10">
                 <p className="text-4xl underline decoration-orange-600 underline-offset-8 decoration-4 ml-10">
                   Special Links
                 </p>
+
                 <ul className="mt-10 ml-10">
                   <li>
-                    <FontAwesomeIcon icon={faChevronRight} /> Text
+                    <button>
+                      <FontAwesomeIcon icon={faChevronRight} /> Contact Us
+                    </button>
                   </li>
                   <li>
-                    <FontAwesomeIcon icon={faChevronRight} /> Text
+                    <button>
+                      <FontAwesomeIcon icon={faChevronRight} /> FAQ
+                    </button>
                   </li>
                   <li>
-                    <FontAwesomeIcon icon={faChevronRight} /> Text
+                    <button>
+                      <FontAwesomeIcon icon={faChevronRight} /> Abaut Us
+                    </button>
                   </li>
                 </ul>
               </div>
@@ -45,10 +57,20 @@ export const Footer = () => {
                 <p className="text-4xl underline decoration-orange-600 underline-offset-8 decoration-4 ml-10">
                   Newsletter
                 </p>
-                <ul className="mt-10 ml-10">
-                  <li>Text</li>
-                  <li>Text</li>
-                  <li>Text</li>
+                <ul className="mt-12 ml-10">
+                  <li className=" w-[27ch]">
+                    Subscribe to our newsletter & get all the latest news.
+                  </li>
+
+                  <li className=" mt-5 leading-10 underline decoration-black underline-offset-[9px] decoration-2">
+                    Subscribeㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+                    <b>
+                      <FontAwesomeIcon
+                        className="text-orange-600"
+                        icon={faChevronRight}
+                      />
+                    </b>
+                  </li>
                 </ul>
               </div>
             </div>
