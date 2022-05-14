@@ -37,7 +37,7 @@ export const Navbar = () => {
         <button className="hidden lg:block lg:mx-4">
           <FontAwesomeIcon icon={faMagnifyingGlass} />
         </button>
-        <button className="">
+        <button className="block lg:hidden ">
           <FontAwesomeIcon icon={faBars} />
         </button>
       </div>

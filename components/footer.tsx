@@ -7,10 +7,10 @@ export const Footer = () => {
     <footer>
       <div className="flex">
         <div className="bg-gray-100 h-[50rem] w-full">
-          <div className="mt-52">
-            <div className="flex justify-evenly  ">
+          <div className="mt-28 lg:mt-52">
+            <div className="lg:flex lg:justify-evenly  text-center lg:text-left  ">
               <div className="leading-10 ">
-                <p className="text-4xl font-serif underline decoration-orange-600 underline-offset-8 decoration-4">
+                <p className="text-4xl font-serif underline decoration-orange-600  underline-offset-8 decoration-4">
                   Contact
                 </p>
                 <ul className="mt-16  ">
@@ -23,11 +23,11 @@ export const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <div className="ml-20">
+              <div className="mt-16 ml-[0.6rem]  w-[23.1rem] h-[23.1rem lg:w-[37.5rem] lg:h-[28.1rem] lg:ml-20 ">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11973.085562819117!2d2.1624647435913054!3d41.389912236208836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2f996716c83%3A0x16f6112475e15883!2sCatedral%20de%20Barcelona!5e0!3m2!1ses!2ses!4v1652201718255!5m2!1ses!2ses"
-                  width="600"
-                  height="450"
+                  width=" 370 lg:600"
+                  height=" 370 lg:450"
                 ></iframe>
               </div>
             </div>
