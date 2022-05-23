@@ -5,7 +5,7 @@ import Image from "next/image";
 export const Navbar = () => {
   return (
     <nav className=" flex items-center justify-between bg-white w-full h-24  ">
-      <div className="ml-40 lg:ml-4">
+      <div className="ml-6">
         <Image
           src="https://cdn-icons-png.flaticon.com/512/594/594311.png"
           alt=""
@@ -17,7 +17,7 @@ export const Navbar = () => {
       <div>
         <div className="flex justify-center text-lg ">
           <button className="hidden lg:block lg:mx-5">
-            <h1 className=" text-orange-600">HOME</h1>
+            <h1 className=" text-orangee">HOME</h1>
           </button>
           <button className="hidden lg:block lg:mx-5 ">
             <h1>PAGES</h1>

@@ -2,11 +2,12 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import Head from "next/head";
 import { Navbar } from "../components/navbar";
+import { Menu } from "../components/menu";
 import { Hero } from "../components/hero";
 import { Description } from "../components/description";
 import { Product } from "../components/product";
+import { Contact } from "../components/contact";
 import { Footer } from "../components/footer";
-import { Footer1 } from "../components/footer-1";
 
 const Home: NextPage = () => {
   return (
@@ -28,11 +29,12 @@ const Home: NextPage = () => {
       </Head>
       <main className="flex flex-col">
         <Navbar />
+        <Menu />
         <Hero />
         <Description />
         <Product />
+        <Contact />
         <Footer />
-        <Footer1 />
       </main>
     </div>
   );
