@@ -1,8 +1,21 @@
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Menu } from "./menu";
+import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
+const responsiveMenu = [
+  { name: "Empresa", target: "#empresa" },
+  { name: "Informacion", target: "#info" },
+];
+
 export const Navbar = () => {
+  const [menu, setMenu] = useState(false);
+  const handleMenu = () => {
+    menu ? setMenu(false) : setMenu(true);
+  };
+  console.log(menu);
   return (
     <nav className=" flex items-center justify-between bg-white w-full h-24  ">
       <div className="ml-6">
@@ -17,7 +30,9 @@ export const Navbar = () => {
       <div>
         <div className="flex justify-center text-lg ">
           <button className="hidden lg:block lg:mx-5">
-            <h1 className=" text-orangee">HOME</h1>
+            <Link href="/#footer">
+              <a className=" text-orangee">HOME</a>
+            </Link>
           </button>
           <button className="hidden lg:block lg:mx-5 ">
             <h1>PAGES</h1>
@@ -37,10 +52,12 @@ export const Navbar = () => {
         <button className="hidden lg:block lg:mx-4">
           <FontAwesomeIcon icon={faMagnifyingGlass} />
         </button>
-        <button className="block lg:hidden ">
+        <button onClick={() => handleMenu} className="block lg:hidden ">
           <FontAwesomeIcon icon={faBars} />
         </button>
+        {menu && <Menu />}
       </div>
     </nav>
   );
 };
+// onClick={() => setMenu(false)}

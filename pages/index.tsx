@@ -29,7 +29,7 @@ const Home: NextPage = () => {
       </Head>
       <main className="flex flex-col">
         <Navbar />
-        <Menu />
+
         <Hero />
         <Description />
         <Product />
