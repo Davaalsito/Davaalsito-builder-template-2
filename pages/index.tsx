@@ -29,7 +29,6 @@ const Home: NextPage = () => {
       </Head>
       <main className="flex flex-col">
         <Navbar />
-
         <Hero />
         <Description />
         <Product />

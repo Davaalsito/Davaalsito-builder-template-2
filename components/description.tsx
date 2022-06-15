@@ -1,7 +1,10 @@
 import Image from "next/image";
 export const Description = () => {
   return (
-    <div className=" flex flex-col lg:flex-row items-center justify-between px-14 py-10 ">
+    <div
+      id="pages"
+      className=" flex flex-col lg:flex-row items-center justify-between px-14 py-10 "
+    >
       <div className="">
         <h1 className="text-orangee text-xl lg:text-2xl   "> NEW ADVENTURE</h1>
         <h1 className="text-2xl font-serif font-bold  lg:text-6xl mt-4  ">

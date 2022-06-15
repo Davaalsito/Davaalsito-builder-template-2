@@ -34,7 +34,10 @@ export const Product = () => {
       {products.map((product, index) => {
         return (
           <div key={index} className="flex flex-col items-center  ">
-            <div className="flex items-center justify-center  bg-orangee rounded-full w-20 h-20 lg:h-28 lg:w-28">
+            <div
+              id="products"
+              className="flex items-center justify-center  bg-orangee rounded-full w-20 h-20 lg:h-28 lg:w-28"
+            >
               <FontAwesomeIcon
                 className="text-4xl text-white"
                 icon={product.icon}

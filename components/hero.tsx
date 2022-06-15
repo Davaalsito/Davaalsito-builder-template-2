@@ -4,7 +4,7 @@ import { pipeline } from "stream";
 import Image from "next/image";
 export const Hero = () => {
   return (
-    <div className="relative w-full ">
+    <div id="home" className="relative w-full ">
       <Image
         width={1920}
         height={875}

@@ -7,7 +7,10 @@ import Image from "next/image";
 
 export const Contact = () => {
   return (
-    <div className="flex flex-col lg:flex-row justify-center items-center bg-gray-100 lg:px-20 py-10 w-full   ">
+    <div
+      id="contact"
+      className="flex flex-col lg:flex-row justify-center items-center bg-gray-100 lg:px-20 py-10 w-full   "
+    >
       <div className=" my-28 text-center lg:text-left">
         <div className=" flex flex-col leading-10  lg:px-9">
           <p className="text-5xl  font-serif underline decoration-orangee underline-offset-8 decoration-4">

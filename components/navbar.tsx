@@ -30,21 +30,25 @@ export const Navbar = () => {
       <div>
         <div className="flex justify-center text-lg ">
           <button className="hidden lg:block lg:mx-5">
-            <Link href="/#footer">
+            <Link href="/#home">
               <a className=" text-orangee">HOME</a>
             </Link>
           </button>
           <button className="hidden lg:block lg:mx-5 ">
-            <h1>PAGES</h1>
+            <Link href="/#pages">
+              <h1>PAGES</h1>
+            </Link>
+          </button>
+
+          <button className="hidden lg:block lg:mx-5">
+            <Link href="/#products">
+              <h1>PRODUCTS</h1>
+            </Link>
           </button>
           <button className="hidden lg:block lg:mx-5">
-            <h1>PORTFOLIO</h1>
-          </button>
-          <button className="hidden lg:block lg:mx-5">
-            <h1>BLOG</h1>
-          </button>
-          <button className="hidden lg:block lg:mx-5">
-            <h1>CONTACT US</h1>
+            <Link href="/#contact">
+              <h1>CONTACT US</h1>
+            </Link>
           </button>
         </div>
       </div>
@@ -52,7 +56,7 @@ export const Navbar = () => {
         <button className="hidden lg:block lg:mx-4">
           <FontAwesomeIcon icon={faMagnifyingGlass} />
         </button>
-        <button onClick={() => handleMenu} className="block lg:hidden ">
+        <button onClick={handleMenu} className="block lg:hidden ">
           <FontAwesomeIcon icon={faBars} />
         </button>
         {menu && <Menu />}
